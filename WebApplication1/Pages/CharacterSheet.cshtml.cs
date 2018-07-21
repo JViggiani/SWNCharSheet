@@ -8,10 +8,6 @@ namespace WebApplication1.Pages
 {
     public class CharacterSheetModel : PageModel
     {
-        public string Message { get; set;}
-        public string Colour { get; set; }
-        public string CurrentDate { get; set; }
-
         //Character overview
         public string Name { get; set; }
         public string Class { get; set; }
@@ -54,9 +50,6 @@ namespace WebApplication1.Pages
 
         public void OnGet()
         {
-            CurrentDate = DateTime.Now.ToString();
-            Message = "Your application description page." + CurrentDate;
-            Colour = "red";
             
         }
     }
