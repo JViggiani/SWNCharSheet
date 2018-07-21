@@ -1,0 +1,14 @@
+﻿@page
+@model CharacterSheetModel
+@{
+    ViewData["Title"] = "About x " + Model.Colour;
+    Model.Colour = "Green";
+
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@Model.Message</h3>
+
+<p>Use this area to provide additional information. like this!</p>
+
+<p>My favourite colour is @Model.Colour and the date is @Model.CurrentDate</p>
+ 
