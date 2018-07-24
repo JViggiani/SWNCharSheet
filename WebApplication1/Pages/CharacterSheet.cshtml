@@ -9,6 +9,8 @@
 
         <h1>@ViewData["Title"]</h1>
 
+        <br />
+
         <div class="container">
 
             <div class="row">
@@ -156,7 +158,9 @@
 
             <br />
 
-        </div>
+        </div> <!-- Basic Information Block -->
+
+        <br />
 
         <div class="container">
 
@@ -178,25 +182,41 @@
 
                 <div class="col-sm-2">
 
-                    <label for="Hitpoints">Hitpoints</label>
+                    <label for="Hitpoints">Hitpoints</label> <!-- have this be one textbox with a slash in the middle using javascript -->
 
                     <input id="Hitpoints" type="text" class="form-control" />
 
                 </div>
 
-            </div>
+                <div class="col-sm-2">
 
-        </div>
+                    <label for="SystemStrain">System Strain</label> <!-- have this be one textbox with a slash in the middle using javascript -->
 
-            <br />
+                    <input id="SystemStrain" type="text" class="form-control" />
 
-            <div class="row">
+                </div>
 
-                <div class="col-sm-8">
+                <div class="col-sm-2">
 
-                    <label for="Notes">Notes</label>
+                    <label for="PermanentStrain">Permanent Strain</label> <!-- have this be one textbox with a slash in the middle using javascript -->
 
-                    <textarea id="Notes" rows="5" class="form-control"></textarea>
+                    <input id="PermanentStrain" type="text" class="form-control" />
+
+                </div>
+
+                <div class="col-sm-2">
+
+                    <label for="XPNextLevel">XP / Next Level</label> <!-- have this be one textbox with a slash in the middle using javascript -->
+
+                    <input id="XPNextLevel" type="text" class="form-control" />
+
+                </div>
+
+                <div class="col-sm-1">
+
+                    <label for="AC">AC</label>
+
+                    <input id="AC" type="text" class="form-control" />
 
                 </div>
 
@@ -206,29 +226,284 @@
 
             <div class="row">
 
-                <div class="col-sm-8">
+                <div class="col-sm-1">
 
-                    <button type="button" class="btn btn-default btn-lg">
+                    <label for="AttackBonus">AB</label>
 
-                        <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+                    <input id="AttackBonus" type="text" class="form-control" />
 
-                        Submit
+                </div>
 
+                <div class="col-sm-1">
+
+                    <label for="Effort">Effort:</label>
+
+                </div>
+
+                <div class="col-sm-1">
+
+                    <label for="CurrentEffort">Current</label>
+
+                    <input id="CurrentEffort" type="text" class="form-control" />
+
+                </div>
+
+                <div class="col-sm-1">
+
+                    <label for="SceneEffort">Scene</label>
+
+                    <input id="SceneEffort" type="text" class="form-control" />
+
+                </div>
+
+                <div class="col-sm-1">
+
+                    <label for="DayEffort">Day</label>
+
+                    <input id="DayEffort" type="text" class="form-control" />
+
+                </div>
+
+                <div class="col-sm-1">
+
+                    <label for="UncommittedEffort">Uncommitted</label>
+
+                    <input id="UncommittedEffort" type="text" class="form-control" />
+
+                </div>
+
+            </div>
+
+        </div> <!-- Core Statistics Block -->
+
+        <br />
+
+        <div class="container">
+
+            <div class="row">
+
+                <h4>Character Attributes</h4>
+
+            </div>
+
+            <div class="row">
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Attribute</th>
+                            <th scope="col">Base</th>
+                            <th scope="col">Bonus</th>
+                            <th scope="col">Modifier</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Strength</th>
+                            <td><input id="StrengthBaseInput" type="text" class="form-control.col-sm-1" /></td> <!--Why are these so big? How to make boxes smaller?-->
+                            <td><input id="StrengthBonusInput" type="text" class="form-control.col-sm-1" /></td>
+                            <td>+1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Dexterity</th>
+                            <td><input id="DexterityBaseInput" type="text" class="form-control.col-sm-1" /></td>
+                            <td><input id="DexterityBonusInput" type="text" class="form-control.col-sm-1" /></td>
+                            <td>+1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Constitution</th>
+                            <td><input id="ConstitutionBaseInput" type="text" class="form-control.col-sm-1" /></td>
+                            <td><input id="ConstitutionBonusInput" type="text" class="form-control.col-sm-1" /></td>
+                            <td>+1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Intelligence</th>
+                            <td><input id="IntelligenceBaseInput" type="text" class="form-control.col-sm-1" /></td>
+                            <td><input id="IntelligenceBonusInput" type="text" class="form-control.col-sm-1" /></td>
+                            <td>+1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Wisdom</th>
+                            <td><input id="WisdomBaseInput" type="text" class="form-control.col-sm-1" /></td>
+                            <td><input id="WisdomBonusInput" type="text" class="form-control.col-sm-1" /></td>
+                            <td>+1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Charisma</th>
+                            <td><input id="CharismaBaseInput" type="text" class="form-control.col-sm-1" /></td>
+                            <td><input id="CharismaBonusInput" type="text" class="form-control.col-sm-1" /></td>
+                            <td>+1</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div> <!-- Character Attributes Block -->
+
+        <br />
+
+        <div class="container">
+
+            <div class="row">
+
+                <h4>Skills</h4>
+
+            </div>
+
+            <div class="row">
+
+                <table class="table table-hover">
+                    <tbody>
+                        <tr>
+                            <td>Administer</td>
+                            <td><input id="Administer" type="text" class="form-control.col-sm-1" /></td>
+                            <td>Know</td>
+                            <td><input id="Know" type="text" class="form-control.col-sm-1" /></td>
+                            <td>Program</td>
+                            <td><input id="Program" type="text" class="form-control.col-sm-1" /></td>
+                            <td>Survive</td>
+                            <td><input id="Survive" type="text" class="form-control.col-sm-1" /></td>
+                        </tr>
+                        <tr>
+                            <td>Connect</td>
+                            <td><input id="Connect" type="text" class="form-control.col-sm-1" /></td>
+                            <td>Lead</td>
+                            <td><input id="Lead" type="text" class="form-control.col-sm-1" /></td>
+                            <td>Punch</td>
+                            <td><input id="Punch" type="text" class="form-control.col-sm-1" /></td>
+                            <td>Talk</td>
+                            <td><input id="Talk" type="text" class="form-control.col-sm-1" /></td>
+                        </tr>
+                        <tr>
+                            <td>Exert</td>
+                            <td><input id="Exert" type="text" class="form-control.col-sm-1" /></td>
+                            <td>Notice</td>
+                            <td><input id="Notice" type="text" class="form-control.col-sm-1" /></td>
+                            <td>Shoot</td>
+                            <td><input id="Shoot" type="text" class="form-control.col-sm-1" /></td>
+                            <td>Trade</td>
+                            <td><input id="Trade" type="text" class="form-control.col-sm-1" /></td>
+                        </tr>
+                        <tr>
+                            <td>Fix</td>
+                            <td><input id="Fix" type="text" class="form-control.col-sm-1" /></td>
+                            <td>Perform</td>
+                            <td><input id="Perform" type="text" class="form-control.col-sm-1" /></td>
+                            <td>Sneak</td>
+                            <td><input id="Sneak" type="text" class="form-control.col-sm-1" /></td>
+                            <td>Work</td>
+                            <td><input id="Work" type="text" class="form-control.col-sm-1" /></td>
+                        </tr>
+                        <tr>
+                            <td>Heal</td>
+                            <td><input id="Heal" type="text" class="form-control.col-sm-1" /></td>
+                            <td>Pilot</td>
+                            <td><input id="Pilot" type="text" class="form-control.col-sm-1" /></td>
+                            <td>Stab</td>
+                            <td><input id="Stab" type="text" class="form-control.col-sm-1" /></td>
+                            <td>Unspent Skill Points</td>
+                            <td><input id="UnspentSkillPoints" type="text" class="form-control.col-sm-1" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div> <!-- Skills Block -->
+
+        <br />
+
+        <div class="container">
+
+            <div class="row">
+
+                <h4>Character Foci</h4>
+
+            </div>
+
+            <div class="row">
+
+                <label for="ClassAbilityFoci">Class Ability: @Model.Class</label>
+
+                <textarea id="ClassAbilityFoci" rows="5" class="form-control"></textarea>
+
+            </div>
+
+            <br />
+
+            <div class="row">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="FociDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Choose A Focus
                     </button>
-
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Alert</a>
+                        <a class="dropdown-item" href="#">Armsman</a>
+                        <a class="dropdown-item" href="#">Assassin</a>
+                        <a class="dropdown-item" href="#">Authority</a>
+                        <a class="dropdown-item" href="#">Close Combatant</a>
+                        <a class="dropdown-item" href="#">Connected</a>
+                        <a class="dropdown-item" href="#">Die Hard</a>
+                        <a class="dropdown-item" href="#">Diplomat</a>
+                        <a class="dropdown-item" href="#">Gunslinger</a>
+                        <a class="dropdown-item" href="#">Hacker</a>
+                        <a class="dropdown-item" href="#">Healer</a>
+                        <a class="dropdown-item" href="#">Henchkeeper</a>
+                        <a class="dropdown-item" href="#">Ironhide</a>
+                        <a class="dropdown-item" href="#">Psychic Training</a>
+                        <a class="dropdown-item" href="#">Savage Fray</a>
+                        <a class="dropdown-item" href="#">Shocking Assault</a>
+                        <a class="dropdown-item" href="#">Sniper</a>
+                        <a class="dropdown-item" href="#">Specialist</a>
+                        <a class="dropdown-item" href="#">Star Captain</a>
+                        <a class="dropdown-item" href="#">Starfarer</a>
+                        <a class="dropdown-item" href="#">Tinker</a>
+                        <a class="dropdown-item" href="#">Unarmed Combatant</a>
+                        <a class="dropdown-item" href="#">Unique Gift</a>
+                        <a class="dropdown-item" href="#">Wanderer</a>
+                        <a class="dropdown-item" href="#">Wild Psychic Talent</a>
+                    </div>
                 </div>
+                <button type="button" class="btn btn-default btn-lg">
+
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+
+                    Add
+
+                </button>
+            </div>
+
+        </div> <!-- Character Foci Block -->
+
+        <br />
+
+        <div class="row">
+
+            <div class="col-sm-8">
+
+                <button type="button" class="btn btn-default btn-lg">
+
+                    <span class="glyphicon glyphicon-save" aria-hidden="true"></span>
+
+                    Save Character
+
+                </button>
 
             </div>
+
+        </div> <!-- Save button - add a container to saving, loading options menu etc-->
 
     </div>
 
+    <br />
 
     <div class="form-group row">
         <label for="@Model.Name" class="col-sm-2 col-form-label">Name</label>
         <div class="col-sm-10">
             <input type="text" readonly class="form-control-plaintext" id="@Model.Name" value="@Model.Name">
         </div>
-    </div>
+    </div> <!-- backend interaction testing -->
 
 </form>
 
