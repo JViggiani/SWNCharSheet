@@ -21,10 +21,10 @@
 
             <div class="row">
 
-                <div class="col-sm-4">
+                <div class="col-sm-6 col-md-4 col-lg-2 col-xs-8">
+                    <!-- have a play around with these-->
                     <!-- why does deleting the -sm-2 mess things up?-->
                     <!-- remember - classes are just names to identify groups of objects in javascript and css to styleise all items of the same type -->
-
                     <label for="@Model.Name">Name</label> <!-- How does this link to the Model.Name part? -->
 
                     <input id="@Model.Name" type="text" class="form-control" /> <!-- ids are individual elements as opposed to classes and their names must be unique -->
@@ -85,7 +85,7 @@
 
                     <label for="Class">Class</label>
 
-                    <select id="Class" class="form-control" input="partialClass()">
+                    <select id="Class" class="form-control" onchange="partialClass()">
 
                         <option>Adventurer</option>
 
@@ -339,7 +339,7 @@
 
             </div>
 
-        </div> <!-- Character Attributes Block -->
+        </div> <!-- Character Attributes Block - don't use tables! -->
 
         <br />
 
@@ -357,13 +357,13 @@
                     <tbody>
                         <tr>
                             <td>Administer</td>
-                            <td><input id="Administer" type="text" class="form-control.col-sm-1" /></td>
+                            <td><input id="Administer" type="text" class="form-control col-sm-1" /></td>
                             <td>Know</td>
-                            <td><input id="Know" type="text" class="form-control.col-sm-1" /></td>
+                            <td><input id="Know" type="text" class="form-control col-sm-1" /></td>
                             <td>Program</td>
-                            <td><input id="Program" type="text" class="form-control.col-sm-1" /></td>
+                            <td><input id="Program" type="text" class="form-control col-sm-1" /></td>
                             <td>Survive</td>
-                            <td><input id="Survive" type="text" class="form-control.col-sm-1" /></td>
+                            <td><input id="Survive" type="text" class="form-control col-sm-1" /></td>
                         </tr>
                         <tr>
                             <td>Connect</td>
@@ -410,7 +410,7 @@
 
             </div>
 
-        </div> <!-- Skills Block -->
+        </div> <!-- Skills Block - note that this table is massive and looks bad on mobile -->
 
         <br />
 
@@ -474,7 +474,7 @@
                 </button>
             </div>
 
-        </div> <!-- Character Foci Block -->
+        </div> <!-- Character Foci Block - https://getbootstrap.com/docs/4.1/components/button-group/ -->
 
         <br />
 
@@ -509,3 +509,19 @@
 
 <p>@Model.Name</p>
  
+
+<script type="text/javascript">
+    function partialClass() { //trying to get a partial class option list to display when "Adventurer" is selected... WiP
+        // Get the text box
+        var classBox = document.getElementById("Class").value;
+        // Get the output text
+        var partialClassBox = document.getElementById("PartialClass").value;
+
+        // If the checkbox is checked, display the output text
+        if (classBox === "Adventurer") {
+            document.getElementById("PartialClass").style.visibility = "visible";
+        } else {
+            document.getElementById("PartialClass").style.visibility = "hidden";
+        }
+    }
+</script>

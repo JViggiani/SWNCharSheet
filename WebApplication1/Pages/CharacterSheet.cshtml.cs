@@ -18,7 +18,7 @@ namespace WebApplication1.Pages
         public string Homeworld { get; set; }
 
         //Core stats
-        public short Level { get; set; }
+        public short Level { get; set; } //turn these to ints
         public short CurrentHP { get; set; }
         public short MaxHP { get; set; }
         public short CurrentSS { get; set; }
@@ -36,7 +36,7 @@ namespace WebApplication1.Pages
         public short Wisdom { get; set; }
         public short Charisma { get; set; }
 
-        public short StrengthModifier { get; }
+        public short StrengthModifier { get; } //separate state from logic - handler class
         public short DexterityModifier { get; }
         public short ConstitutionModifier { get; }
         public short IntelligenceModifier { get; }
@@ -47,6 +47,7 @@ namespace WebApplication1.Pages
         public short MentalSave { get; }
         public short EvasionSave { get; }
 
+        //razor default values
 
         public void OnGet()
         {
