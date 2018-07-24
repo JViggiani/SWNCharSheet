@@ -9,116 +9,219 @@
 
         <h1>@ViewData["Title"]</h1>
 
-        <div class="row">
+        <div class="container">
 
-            <div class="col-sm-4">
-                <!-- remember - classes are just names to identify groups of objects in javascript and css to styleise all items of the same type -->
+            <div class="row">
 
-                <label for="@Model.Name">Name</label>
-
-                <input id="Name" type="text" class="form-control" /> <!-- ids are individual elements as opposed to classes and their names must be unique -->
+                <h4>Basic Information</h4>
 
             </div>
 
-            <div class="col-sm-4">
+            <div class="row">
 
-                <label for="Start">Start</label>
+                <div class="col-sm-4">
+                    <!-- why does deleting the -sm-2 mess things up?-->
+                    <!-- remember - classes are just names to identify groups of objects in javascript and css to styleise all items of the same type -->
 
-                <input id="Start" type="text" class="form-control" />
+                    <label for="@Model.Name">Name</label> <!-- How does this link to the Model.Name part? -->
+
+                    <input id="@Model.Name" type="text" class="form-control" /> <!-- ids are individual elements as opposed to classes and their names must be unique -->
+
+                </div>
+
+                <div class="col-sm-2">
+
+                    <label for="Background">Background</label>
+
+                    <select id="Background" class="form-control">
+
+                        <option>Barbarian</option>
+
+                        <option>Clergy</option>
+
+                        <option>Courtesan</option>
+
+                        <option>Criminal</option>
+
+                        <option>Dilettante</option>
+
+                        <option>Entertainer</option>
+
+                        <option>Merchant</option>
+
+                        <option>Noble</option>
+
+                        <option>Official</option>
+
+                        <option>Peasant</option>
+
+                        <option>Physician</option>
+
+                        <option>Pilot</option>
+
+                        <option>Politician</option>
+
+                        <option>Scholar</option>
+
+                        <option>Soldier</option>
+
+                        <option>Spacer</option>
+
+                        <option>Technician</option>
+
+                        <option>Thug</option>
+
+                        <option>Vagabond</option>
+
+                        <option>Worker</option>
+
+                    </select>
+
+                </div>
+
+                <div class="col-sm-2">
+
+                    <label for="Class">Class</label>
+
+                    <select id="Class" class="form-control" input="partialClass()">
+
+                        <option>Adventurer</option>
+
+                        <option>Expert</option>
+
+                        <option>Psychic</option>
+
+                        <option>Warrior</option>
+
+                    </select>
+
+                </div>
+
+                <div class="col-sm-2">
+                    <!--not yet working. Want to have a Partial Class box in the event that Adventurer is selected, see javascript function-->
+
+                    <label for="PartialClass" style="visibility:hidden">Partial Classes</label>
+
+                    <select id="PartialClass" class="form-control" style="visibility:hidden">
+
+                        <option>Expert / Psychic</option>
+
+                        <option>Expert / Warrior</option>
+
+                        <option>Psychic / Warrior</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <br />
+
+            <div class="row">
+
+                <div class="col-sm-2">
+
+                    <label for="Species">Species</label>
+
+                    <input id="Species" type="text" class="form-control" />
+
+                </div>
+
+                <div class="col-sm-2">
+
+                    <label for="Gender">Gender</label>
+
+                    <input id="Gender" type="text" class="form-control" />
+
+                </div>
+
+                <div class="col-sm-4">
+
+                    <label for="Faction">Faction</label>
+
+                    <input id="Faction" type="text" class="form-control" />
+
+                </div>
+
+                <div class="col-sm-2">
+
+                    <label for="Homeworld">Homeworld</label>
+
+                    <input id="Homeworld" type="text" class="form-control" />
+
+                </div>
+
+            </div>
+
+            <br />
+
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+
+                <h4>Core Statistics</h4>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-1">
+
+                    <label for="Level">Level</label>
+
+                    <input id="Level" type="text" class="form-control" />
+
+                </div>
+
+                <div class="col-sm-2">
+
+                    <label for="Hitpoints">Hitpoints</label>
+
+                    <input id="Hitpoints" type="text" class="form-control" />
+
+                </div>
 
             </div>
 
         </div>
 
-        <br />
+            <br />
 
-        <div class="row">
+            <div class="row">
 
-            <div class="col-sm-4">
+                <div class="col-sm-8">
 
-                <label for="Client">Client</label>
+                    <label for="Notes">Notes</label>
 
-                <input id="Client" type="text" class="form-control" />
+                    <textarea id="Notes" rows="5" class="form-control"></textarea>
 
-            </div>
-
-            <div class="col-sm-4">
-
-                <label for="DurationHours">Duration (Hours)</label>
-
-                <input id="DurationHours" type="text" class="form-control" />
+                </div>
 
             </div>
 
-        </div>
+            <br />
 
-        <br />
+            <div class="row">
 
-        <div class="row">
+                <div class="col-sm-8">
 
-            <div class="col-sm-4">
+                    <button type="button" class="btn btn-default btn-lg">
 
-                <label for="Category">Category</label>
+                        <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
 
-                <select id="Category" class="form-control">
+                        Submit
 
-                    <option>Meeting</option>
+                    </button>
 
-                    <option>Administration</option>
-
-                    <option>Analysis/Design</option>
-
-                    <option>Development</option>
-
-                    <option>Testing</option>
-
-                </select>
+                </div>
 
             </div>
-
-            <div class="col-sm-4">
-
-                <label for="DurationMinutes">Duration (Minutes)</label>
-
-                <input id="DurationMinutes" type="text" class="form-control" />
-
-            </div>
-
-        </div>
-
-        <br />
-
-        <div class="row">
-
-            <div class="col-sm-8">
-
-                <label for="Notes">Notes</label>
-
-                <textarea id="Notes" rows="5" class="form-control"></textarea>
-
-            </div>
-
-        </div>
-
-        <br />
-
-        <div class="row">
-
-            <div class="col-sm-8">
-
-                <button type="button" class="btn btn-default btn-lg">
-
-                    <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
-
-                    Submit
-
-                </button>
-
-            </div>
-
-        </div>
 
     </div>
+
 
     <div class="form-group row">
         <label for="@Model.Name" class="col-sm-2 col-form-label">Name</label>
