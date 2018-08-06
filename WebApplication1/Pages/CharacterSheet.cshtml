@@ -21,7 +21,7 @@
 
             <div class="row">
 
-                <div class="col-sm-6 col-md-4 col-lg-2 col-xs-8">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
                     <!-- have a play around with these-->
                     <!-- why does deleting the -sm-2 mess things up?-->
                     <!-- remember - classes are just names to identify groups of objects in javascript and css to styleise all items of the same type -->
@@ -31,7 +31,7 @@
 
                 </div>
 
-                <div class="col-sm-2">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
 
                     <label for="Background">Background</label>
 
@@ -81,7 +81,7 @@
 
                 </div>
 
-                <div class="col-sm-2">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
 
                     <label for="Class">Class</label>
 
@@ -99,13 +99,15 @@
 
                 </div>
 
-                <div class="col-sm-2">
-                    <!--not yet working. Want to have a Partial Class box in the event that Adventurer is selected, see javascript function-->
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <!--how to make a javescript file which only acts on this page?-->
+                   
+                    <label for="PartialClasses">Partial Classes</label>
 
-                    <label for="PartialClass" style="visibility:hidden">Partial Classes</label>
+                    <select id="PartialClasses" class="form-control">
 
-                    <select id="PartialClass" class="form-control" style="visibility:hidden">
-
+                        <option>Select..</option>
+                        
                         <option>Expert / Psychic</option>
 
                         <option>Expert / Warrior</option>
@@ -122,7 +124,7 @@
 
             <div class="row">
 
-                <div class="col-sm-2">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
 
                     <label for="Species">Species</label>
 
@@ -130,7 +132,7 @@
 
                 </div>
 
-                <div class="col-sm-2">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
 
                     <label for="Gender">Gender</label>
 
@@ -138,7 +140,7 @@
 
                 </div>
 
-                <div class="col-sm-4">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
 
                     <label for="Faction">Faction</label>
 
@@ -146,7 +148,7 @@
 
                 </div>
 
-                <div class="col-sm-2">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
 
                     <label for="Homeworld">Homeworld</label>
 
@@ -172,51 +174,35 @@
 
             <div class="row">
 
-                <div class="col-sm-1">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
 
                     <label for="Level">Level</label>
 
-                    <input id="Level" type="text" class="form-control" />
+                    <input id="Level" type="number" class="form-control" />
 
                 </div>
 
-                <div class="col-sm-2">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
 
                     <label for="Hitpoints">Hitpoints</label> <!-- have this be one textbox with a slash in the middle using javascript -->
 
-                    <input id="Hitpoints" type="text" class="form-control" />
+                    <input id="Hitpoints" type="number" class="form-control" />
 
                 </div>
 
-                <div class="col-sm-2">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
 
                     <label for="SystemStrain">System Strain</label> <!-- have this be one textbox with a slash in the middle using javascript -->
 
-                    <input id="SystemStrain" type="text" class="form-control" />
+                    <input id="SystemStrain" type="number" class="form-control" />
 
                 </div>
 
-                <div class="col-sm-2">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
 
                     <label for="PermanentStrain">Permanent Strain</label> <!-- have this be one textbox with a slash in the middle using javascript -->
 
-                    <input id="PermanentStrain" type="text" class="form-control" />
-
-                </div>
-
-                <div class="col-sm-2">
-
-                    <label for="XPNextLevel">XP / Next Level</label> <!-- have this be one textbox with a slash in the middle using javascript -->
-
-                    <input id="XPNextLevel" type="text" class="form-control" />
-
-                </div>
-
-                <div class="col-sm-1">
-
-                    <label for="AC">AC</label>
-
-                    <input id="AC" type="text" class="form-control" />
+                    <input id="PermanentStrain" type="number" class="form-control" />
 
                 </div>
 
@@ -226,53 +212,59 @@
 
             <div class="row">
 
-                <div class="col-sm-1">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+
+                    <label for="XPNextLevel">XP / Next Level</label> <!-- have this be one textbox with a slash in the middle using javascript -->
+
+                    <input id="XPNextLevel" type="number" class="form-control" />
+
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+
+                    <label for="AC">AC</label>
+
+                    <input id="AC" type="number" class="form-control" />
+
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-lg-3">
 
                     <label for="AttackBonus">AB</label>
 
-                    <input id="AttackBonus" type="text" class="form-control" />
+                    <input id="AttackBonus" type="number" class="form-control" />
 
                 </div>
 
-                <div class="col-sm-1">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
 
-                    <label for="Effort">Effort:</label>
+                    <label for="Encumbrance">Encumbrance</label>
 
-                </div>
-
-                <div class="col-sm-1">
-
-                    <label for="CurrentEffort">Current</label>
-
-                    <input id="CurrentEffort" type="text" class="form-control" />
-
-                </div>
-
-                <div class="col-sm-1">
-
-                    <label for="SceneEffort">Scene</label>
-
-                    <input id="SceneEffort" type="text" class="form-control" />
-
-                </div>
-
-                <div class="col-sm-1">
-
-                    <label for="DayEffort">Day</label>
-
-                    <input id="DayEffort" type="text" class="form-control" />
-
-                </div>
-
-                <div class="col-sm-1">
-
-                    <label for="UncommittedEffort">Uncommitted</label>
-
-                    <input id="UncommittedEffort" type="text" class="form-control" />
+                    <input id="Encumbrance" type="number" class="form-control" />
 
                 </div>
 
             </div>
+
+            <br />
+
+
+            <label>Effort:</label> <!--Get these to be 4 aspects of one input box...-->
+            <div class="form-inline">
+                <div class="form-group col-xs-12 col-sm-6 col-lg-3">
+                    <input type="number" class="form-control" placeholder="Current">
+                </div>
+                <div class="form-group col-xs-12 col-sm-6 col-lg-3">
+                    <input type="number" class="form-control" placeholder="Scene">
+                </div>
+                <div class="form-group col-xs-12 col-sm-6 col-lg-3">
+                    <input type="number" class="form-control" placeholder="Day">
+                </div>
+                <div class="form-group col-xs-12 col-sm-6 col-lg-3">
+                    <input type="number" class="form-control" placeholder="Uncommitted">
+                </div>
+            </div>
+
 
         </div> <!-- Core Statistics Block -->
 
@@ -288,7 +280,7 @@
 
             <div class="row">
 
-                <table class="table table-hover">
+                <table class="table table-responsive">
                     <thead>
                         <tr>
                             <th scope="col">Attribute</th>
@@ -353,60 +345,113 @@
 
             <div class="row">
 
-                <table class="table table-hover">
-                    <tbody>
-                        <tr>
-                            <td>Administer</td>
-                            <td><input id="Administer" type="text" class="form-control col-sm-1" /></td>
-                            <td>Know</td>
-                            <td><input id="Know" type="text" class="form-control col-sm-1" /></td>
-                            <td>Program</td>
-                            <td><input id="Program" type="text" class="form-control col-sm-1" /></td>
-                            <td>Survive</td>
-                            <td><input id="Survive" type="text" class="form-control col-sm-1" /></td>
-                        </tr>
-                        <tr>
-                            <td>Connect</td>
-                            <td><input id="Connect" type="text" class="form-control.col-sm-1" /></td>
-                            <td>Lead</td>
-                            <td><input id="Lead" type="text" class="form-control.col-sm-1" /></td>
-                            <td>Punch</td>
-                            <td><input id="Punch" type="text" class="form-control.col-sm-1" /></td>
-                            <td>Talk</td>
-                            <td><input id="Talk" type="text" class="form-control.col-sm-1" /></td>
-                        </tr>
-                        <tr>
-                            <td>Exert</td>
-                            <td><input id="Exert" type="text" class="form-control.col-sm-1" /></td>
-                            <td>Notice</td>
-                            <td><input id="Notice" type="text" class="form-control.col-sm-1" /></td>
-                            <td>Shoot</td>
-                            <td><input id="Shoot" type="text" class="form-control.col-sm-1" /></td>
-                            <td>Trade</td>
-                            <td><input id="Trade" type="text" class="form-control.col-sm-1" /></td>
-                        </tr>
-                        <tr>
-                            <td>Fix</td>
-                            <td><input id="Fix" type="text" class="form-control.col-sm-1" /></td>
-                            <td>Perform</td>
-                            <td><input id="Perform" type="text" class="form-control.col-sm-1" /></td>
-                            <td>Sneak</td>
-                            <td><input id="Sneak" type="text" class="form-control.col-sm-1" /></td>
-                            <td>Work</td>
-                            <td><input id="Work" type="text" class="form-control.col-sm-1" /></td>
-                        </tr>
-                        <tr>
-                            <td>Heal</td>
-                            <td><input id="Heal" type="text" class="form-control.col-sm-1" /></td>
-                            <td>Pilot</td>
-                            <td><input id="Pilot" type="text" class="form-control.col-sm-1" /></td>
-                            <td>Stab</td>
-                            <td><input id="Stab" type="text" class="form-control.col-sm-1" /></td>
-                            <td>Unspent Skill Points</td>
-                            <td><input id="UnspentSkillPoints" type="text" class="form-control.col-sm-1" /></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="container">
+
+                    <div class="col-xs-12">
+
+                        <div class="col-xs-6">
+
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="col-xs-12">
+                                    <label for="Administer">Administer</label>
+                                    <input id="Administer" type="text" class="form-control" />
+                                </div>
+                                <div class="col-xs-12">
+                                    <label for="Connect">Connect</label>
+                                    <input id="Connect" type="text" class="form-control" />
+                                </div>
+                                <div class="col-xs-12">
+                                    <label for="Exert">Exert</label>
+                                    <input id="Exert" type="text" class="form-control" />
+                                </div>
+                                <div class="col-xs-12">
+                                    <label for="Fix">Fix</label>
+                                    <input id="Fix" type="text" class="form-control" />
+                                </div>
+                                <div class="col-xs-12">
+                                    <label for="Heal">Heal</label>
+                                    <input id="Heal" type="text" class="form-control" />
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="col-xs-12">
+                                    <label for="Know">Know</label>
+                                    <input id="Know" type="text" class="form-control" />
+                                </div>
+                                <div class="col-xs-12">
+                                    <label for="Lead">Lead</label>
+                                    <input id="Lead" type="text" class="form-control" />
+                                </div>
+                                <div class="col-xs-12">
+                                    <label for="Notice">Notice</label>
+                                    <input id="Notice" type="text" class="form-control" />
+                                </div>
+                                <div class="col-xs-12">
+                                    <label for="Perform">Perform</label>
+                                    <input id="Perform" type="text" class="form-control" />
+                                </div>
+                                <div class="col-xs-12">
+                                    <label for="Pilot">Pilot</label>
+                                    <input id="Pilot" type="text" class="form-control" />
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-6">
+
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="col-xs-12">
+                                    <label for="Program">Program</label>
+                                    <input id="Program" type="text" class="form-control" />
+                                </div>
+                                <div class="col-xs-12">
+                                    <label for="Punch">Punch</label>
+                                    <input id="Punch" type="text" class="form-control" />
+                                </div>
+                                <div class="col-xs-12">
+                                    <label for="Shoot">Shoot</label>
+                                    <input id="Shoot" type="text" class="form-control" />
+                                </div>
+                                <div class="col-xs-12">
+                                    <label for="Sneak">Sneak</label>
+                                    <input id="Sneak" type="text" class="form-control" />
+                                </div>
+                                <div class="col-xs-12">
+                                    <label for="Stab">Stab</label>
+                                    <input id="Stab" type="text" class="form-control" />
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="col-xs-12">
+                                    <label for="Survive">Survive</label>
+                                    <input id="Survive" type="text" class="form-control" />
+                                </div>
+                                <div class="col-xs-12">
+                                    <label for="Talk">Talk</label>
+                                    <input id="Talk" type="text" class="form-control" />
+                                </div>
+                                <div class="col-xs-12">
+                                    <label for="Trade">Trade</label>
+                                    <input id="Trade" type="text" class="form-control" />
+                                </div>
+                                <div class="col-xs-12">
+                                    <label for="Work">Work</label>
+                                    <input id="Work" type="text" class="form-control" />
+                                </div>
+                                <div class="col-xs-12">
+                                    <label for="UnspentSkillPoints">Unspent Skill Points</label>
+                                    <input id="UnspentSkillPoints" type="text" class="form-control" />
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                    </div>
 
             </div>
 
@@ -515,13 +560,14 @@
         // Get the text box
         var classBox = document.getElementById("Class").value;
         // Get the output text
-        var partialClassBox = document.getElementById("PartialClass").value;
+        var partialClassBox = document.getElementById("PartialClasses").value;
 
         // If the checkbox is checked, display the output text
         if (classBox === "Adventurer") {
-            document.getElementById("PartialClass").style.visibility = "visible";
+            document.getElementById("PartialClasses").disabled = false;
         } else {
-            document.getElementById("PartialClass").style.visibility = "hidden";
+            document.getElementById("PartialClasses").disabled = true;
+            document.getElementById("PartialClasses").selectedIndex = "0";
         }
     }
 </script>
