@@ -4,7 +4,9 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="bootstrap" Version="4.1.2" />
+    <PackageReference Include="jQuery" Version="3.3.1" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="popper.js" Version="1.14.3" />
   </ItemGroup>
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
