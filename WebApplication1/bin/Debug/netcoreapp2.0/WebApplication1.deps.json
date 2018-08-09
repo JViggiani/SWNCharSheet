@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "f87380c5d4a7ad43e5369b1059a0083cdbc423f0"
+    "signature": "dd9e6d3ee55c742b5aabc68c967c28bd727bf263"
   },
   "compilationOptions": {
     "defines": [
@@ -26,7 +26,8 @@
           "Microsoft.AspNetCore.All": "2.0.5",
           "Microsoft.NETCore.App": "2.0.0",
           "bootstrap": "4.1.2",
-          "jQuery": "3.3.1"
+          "jQuery": "3.3.1",
+          "popper.js": "1.14.3"
         },
         "runtime": {
           "WebApplication1.dll": {}
@@ -38,7 +39,7 @@
       "bootstrap/4.1.2": {
         "dependencies": {
           "jQuery": "3.3.1",
-          "popper.js": "1.14.0"
+          "popper.js": "1.14.3"
         }
       },
       "jQuery/3.3.1": {},
@@ -2374,7 +2375,7 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "popper.js/1.14.0": {},
+      "popper.js/1.14.3": {},
       "Remotion.Linq/2.1.1": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -5150,12 +5151,12 @@
       "path": "newtonsoft.json.bson/1.0.1",
       "hashPath": "newtonsoft.json.bson.1.0.1.nupkg.sha512"
     },
-    "popper.js/1.14.0": {
+    "popper.js/1.14.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-SPxZdXknelgQ015wey7GMZvsVdt/SyEmHYORhEp5k/uF9MUk9DPtkn+6dR98fud2hVWJjZm9KKr474+r7WQt+A==",
-      "path": "popper.js/1.14.0",
-      "hashPath": "popper.js.1.14.0.nupkg.sha512"
+      "sha512": "sha512-d8LyFd0qc+arQUImKHnp86GQjRtrh3/fqHklxjNjRF2tdDhvTVG6Q858k21LPfnXdirrhz5t/ZcAh3tZ7iHQxg==",
+      "path": "popper.js/1.14.3",
+      "hashPath": "popper.js.1.14.3.nupkg.sha512"
     },
     "Remotion.Linq/2.1.1": {
       "type": "package",

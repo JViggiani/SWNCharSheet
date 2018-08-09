@@ -261,24 +261,6 @@
 
                 <br />
 
-
-                <label>Effort:</label> <!--Get these to be 4 aspects of one input box...-->
-                <div class="form-inline">
-                    <div class="form-group col-xs-12 col-sm-6 col-lg-3">
-                        <input type="number" class="form-control" placeholder="Current">
-                    </div>
-                    <div class="form-group col-xs-12 col-sm-6 col-lg-3">
-                        <input type="number" class="form-control" placeholder="Scene">
-                    </div>
-                    <div class="form-group col-xs-12 col-sm-6 col-lg-3">
-                        <input type="number" class="form-control" placeholder="Day">
-                    </div>
-                    <div class="form-group col-xs-12 col-sm-6 col-lg-3">
-                        <input type="number" class="form-control" placeholder="Uncommitted">
-                    </div>
-                </div>
-
-
             </div> <!-- Core Statistics Block -->
 
             <br />
@@ -360,109 +342,73 @@
 
                     <div class="container">
 
-                        <div class="col-xs-12">
-
-                            <div class="col-xs-6">
-
-                                <div class="col-xs-12 col-sm-6">
-                                    <div class="col-xs-12">
+                                <div class="col-xs-12 col-sm-6 col-md-3">
                                         <label for="Administer">Administer</label>
                                         <input id="Administer" type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-xs-12">
+
                                         <label for="Connect">Connect</label>
                                         <input id="Connect" type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-xs-12">
+
                                         <label for="Exert">Exert</label>
                                         <input id="Exert" type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-xs-12">
+
                                         <label for="Fix">Fix</label>
                                         <input id="Fix" type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-xs-12">
+
                                         <label for="Heal">Heal</label>
                                         <input id="Heal" type="text" class="form-control" />
-                                    </div>
                                 </div>
 
-                                <div class="col-xs-12 col-sm-6">
-                                    <div class="col-xs-12">
+                                <div class="col-xs-12 col-sm-6 col-md-3">
                                         <label for="Know">Know</label>
                                         <input id="Know" type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-xs-12">
+
                                         <label for="Lead">Lead</label>
                                         <input id="Lead" type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-xs-12">
+
                                         <label for="Notice">Notice</label>
                                         <input id="Notice" type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-xs-12">
+
                                         <label for="Perform">Perform</label>
                                         <input id="Perform" type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-xs-12">
+
                                         <label for="Pilot">Pilot</label>
                                         <input id="Pilot" type="text" class="form-control" />
-                                    </div>
                                 </div>
 
-                            </div>
-
-                            <div class="col-xs-6">
-
-                                <div class="col-xs-12 col-sm-6">
-                                    <div class="col-xs-12">
+                                <div class="col-xs-12 col-sm-6 col-md-3">
                                         <label for="Program">Program</label>
                                         <input id="Program" type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-xs-12">
+
                                         <label for="Punch">Punch</label>
                                         <input id="Punch" type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-xs-12">
+
                                         <label for="Shoot">Shoot</label>
                                         <input id="Shoot" type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-xs-12">
+
                                         <label for="Sneak">Sneak</label>
                                         <input id="Sneak" type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-xs-12">
+
                                         <label for="Stab">Stab</label>
                                         <input id="Stab" type="text" class="form-control" />
-                                    </div>
                                 </div>
 
-                                <div class="col-xs-12 col-sm-6">
-                                    <div class="col-xs-12">
+                                <div class="col-xs-12 col-sm-6 col-md-3">
                                         <label for="Survive">Survive</label>
                                         <input id="Survive" type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-xs-12">
+
                                         <label for="Talk">Talk</label>
                                         <input id="Talk" type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-xs-12">
+
                                         <label for="Trade">Trade</label>
                                         <input id="Trade" type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-xs-12">
+
                                         <label for="Work">Work</label>
                                         <input id="Work" type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-xs-12">
+
                                         <label for="UnspentSkillPoints">Unspent Skill Points</label>
                                         <input id="UnspentSkillPoints" type="text" class="form-control" />
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
+                                 </div>
 
                     </div>
 
@@ -476,65 +422,195 @@
 
                 <div class="row">
 
-                    <h4>Character Foci</h4>
+                    <h4>Psychic Skills and Techniques</h4>
 
                 </div>
 
                 <div class="row">
 
-                    <label id="ClassFoci"></label> <!-- TODO: make it display adventurer by default-->
+                    <div class="container">
 
-                    <textarea id="ClassAbilityFoci" rows="5" class="form-control" disabled></textarea> <!-- best way to have this be filled in with default text? -->
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <label for="Biopsionics">Biopsionics</label>
+                            <input id="Biopsionics" type="text" class="form-control" />
+
+                            <label for="Metapsionics">Metapsionics</label>
+                            <input id="Metapsionics" type="text" class="form-control" />
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <label for="Precognition">Precognition</label>
+                            <input id="Precognition" type="text" class="form-control" />
+
+                            <label for="Telekinesis">Telekinesis</label>
+                            <input id="Telekinesis" type="text" class="form-control" />
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <label for="Telepathy">Telepathy</label>
+                            <input id="Telepathy" type="text" class="form-control" />
+
+                            <label for="Teleportation">Teleportation</label>
+                            <input id="Teleportation" type="text" class="form-control" />
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <label for="UnspentPsionicSkillPoints">Unspent Psionic Skill Points</label>
+                            <input id="UnspentPsionicSkillPoints" type="text" class="form-control" />
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <br />
+
+                <div class="container">
+
+                    <label>Effort:</label> <!--Get these to be 4 aspects of one input box...-->
+
+                    <div class="form-inline">
+
+                        <div class="form-group col-xs-12 col-sm-6 col-lg-3">
+                            <input type="number" class="form-control" placeholder="Current">
+                        </div>
+
+                        <div class="form-group col-xs-12 col-sm-6 col-lg-3">
+                            <input type="number" class="form-control" placeholder="Scene">
+                        </div>
+
+                        <div class="form-group col-xs-12 col-sm-6 col-lg-3">
+                            <input type="number" class="form-control" placeholder="Day">
+                        </div>
+
+                        <div class="form-group col-xs-12 col-sm-6 col-lg-3">
+                            <input type="number" class="form-control" placeholder="Uncommitted">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            <br />
+
+                <div class="row">
+
+                    <div class="col-xs-12">
+
+                        <label id="PsychicTechniques">Psychic Techniques</label>
+
+                    </div>
 
                 </div>
 
                 <br />
 
                 <div class="row">
-                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                        <div class="btn-group" role="group">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="FociDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Choose A Focus
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Custom</a>
-                                <a class="dropdown-item" href="#">Alert</a>
-                                <a class="dropdown-item" href="#">Armsman</a>
-                                <a class="dropdown-item" href="#">Assassin</a>
-                                <a class="dropdown-item" href="#">Authority</a>
-                                <a class="dropdown-item" href="#">Close Combatant</a>
-                                <a class="dropdown-item" href="#">Connected</a>
-                                <a class="dropdown-item" href="#">Die Hard</a>
-                                <a class="dropdown-item" href="#">Diplomat</a>
-                                <a class="dropdown-item" href="#">Gunslinger</a>
-                                <a class="dropdown-item" href="#">Hacker</a>
-                                <a class="dropdown-item" href="#">Healer</a>
-                                <a class="dropdown-item" href="#">Henchkeeper</a>
-                                <a class="dropdown-item" href="#">Ironhide</a>
-                                <a class="dropdown-item" href="#">Psychic Training</a>
-                                <a class="dropdown-item" href="#">Savage Fray</a>
-                                <a class="dropdown-item" href="#">Shocking Assault</a>
-                                <a class="dropdown-item" href="#">Sniper</a>
-                                <a class="dropdown-item" href="#">Specialist</a>
-                                <a class="dropdown-item" href="#">Star Captain</a>
-                                <a class="dropdown-item" href="#">Starfarer</a>
-                                <a class="dropdown-item" href="#">Tinker</a>
-                                <a class="dropdown-item" href="#">Unarmed Combatant</a>
-                                <a class="dropdown-item" href="#">Unique Gift</a>
-                                <a class="dropdown-item" href="#">Wanderer</a>
-                                <a class="dropdown-item" href="#">Wild Psychic Talent</a>
+
+                    <div class="col-xs-12">
+
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                            <div class="btn-group" role="group">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="PsychicDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Choose A Technique
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Custom</a>
+                                </div>
                             </div>
+                            <button type="button" class="btn btn-primary" onclick="addPsychicTechnique()">
+
+                                <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
+
+                                Add
+
+                            </button>
                         </div>
-                        <button type="button" class="btn btn-primary" onclick="addFoci()">
 
-                            <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
-
-                            Add
-
-                        </button>
                     </div>
 
+                </div>
 
+            </div> <!-- Psionics Block -->
+
+            <br />
+
+            <div class="container">
+
+                <div class="row">
+
+                    <h4>Character Foci</h4>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-xs-12">
+
+                        <label id="ClassFoci">Class Ability: Adventurer -</label> <!-- TODO: make it display adventurer by default-->
+
+                        
+
+                    </div>
+
+                </div>
+
+                <br />
+
+                <div id="JavascriptAddElementTest">
+                    <textarea id="ClassAbilityFoci" rows="5" class="form-control" disabled></textarea> <!-- best way to have this be filled in with default text? -->
+                </div>
+
+                <div class="row">
+
+                    <div class="col-xs-12">
+
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                            <div class="btn-group" role="group">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="FociDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Choose A Focus
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Custom</a>
+                                    <a class="dropdown-item" href="#">Alert</a>
+                                    <a class="dropdown-item" href="#">Armsman</a>
+                                    <a class="dropdown-item" href="#">Assassin</a>
+                                    <a class="dropdown-item" href="#">Authority</a>
+                                    <a class="dropdown-item" href="#">Close Combatant</a>
+                                    <a class="dropdown-item" href="#">Connected</a>
+                                    <a class="dropdown-item" href="#">Die Hard</a>
+                                    <a class="dropdown-item" href="#">Diplomat</a>
+                                    <a class="dropdown-item" href="#">Gunslinger</a>
+                                    <a class="dropdown-item" href="#">Hacker</a>
+                                    <a class="dropdown-item" href="#">Healer</a>
+                                    <a class="dropdown-item" href="#">Henchkeeper</a>
+                                    <a class="dropdown-item" href="#">Ironhide</a>
+                                    <a class="dropdown-item" href="#">Psychic Training</a>
+                                    <a class="dropdown-item" href="#">Savage Fray</a>
+                                    <a class="dropdown-item" href="#">Shocking Assault</a>
+                                    <a class="dropdown-item" href="#">Sniper</a>
+                                    <a class="dropdown-item" href="#">Specialist</a>
+                                    <a class="dropdown-item" href="#">Star Captain</a>
+                                    <a class="dropdown-item" href="#">Starfarer</a>
+                                    <a class="dropdown-item" href="#">Tinker</a>
+                                    <a class="dropdown-item" href="#">Unarmed Combatant</a>
+                                    <a class="dropdown-item" href="#">Unique Gift</a>
+                                    <a class="dropdown-item" href="#">Wanderer</a>
+                                    <a class="dropdown-item" href="#">Wild Psychic Talent</a>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" onclick="addFoci()">
+
+                                <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
+
+                                Add
+
+                            </button>
+
+
+
+                        </div>
+                    </div>
                 </div>
 
             </div> <!-- Character Foci Block - https://getbootstrap.com/docs/4.1/components/button-group/ -->
@@ -591,11 +667,19 @@
         }
 
         function addFoci() {
+            var br = document.createElement("br");
+
+            document.getElementById("JavascriptAddElementTest").appendChild(br);
+
             var btn = document.createElement("textarea");
+
+            btn.setAttribute("rows", "5");
+            btn.setAttribute("class", "form-control");
             //var t = document.createTextNode("CLICK ME"); (append element with text)
             //btn.appendChild(t);
-            document.getElementById("FociDropdownMenuButton").appendChild(btn);
+            document.getElementById("JavascriptAddElementTest").appendChild(btn);
         }
+
     </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
